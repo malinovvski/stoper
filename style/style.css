@@ -32,18 +32,18 @@ button:hover{
     font-weight: 800;
 }
 
-.meter{
-    margin-left: 255px;
-    
-
-}
-
 
 #minuty,
 #sekundy {
     font-size: 2em;
 }
     
+#meter
+{
+    color: pink;
+    font-size: 25px;
+    margin-left: 255px;
+}
 
     
     

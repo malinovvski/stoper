@@ -1,21 +1,21 @@
-function(startTimer){
-
-
-};
-
-function(pauseTimer){
-
-
+function start(){
+    console.log("start");
 
 };
 
+function pause(){
+    console.log("pause");
+  
 
-function(stopTimer){
+};
 
+
+function stop(){
+    console.log("stop");
 
 
 };
 
 
 let time = 0; 
-console.log(time);
+document.getElementById('meter').innerHTML= time;
