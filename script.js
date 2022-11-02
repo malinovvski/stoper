@@ -1,21 +1,28 @@
+
 function start(){
-    console.log("start");
+     interval = setInterval(() => {
+        time += 1;
+        stoperElement.innerHTML= time 
+}, 1000);
+    
 
 };
 
 function pause(){
-    console.log("pause");
-  
-
+    clearInterval(interval);     
 };
 
 
 function stop(){
-    console.log("stop");
-
-
+    time = 0;
+    stoperElement.innerHTML = time;
+    clearInterval(interval);
 };
-
-
 let time = 0; 
-document.getElementById('meter').innerHTML= time;
+let interval = null;
+let stoperElement = document.querySelector("#meter");
+stoperElement.innerHTML = time;
+
+
+
+

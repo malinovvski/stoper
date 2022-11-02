@@ -3,9 +3,12 @@ body{
 }
 .container {
 	width: 800px;
+    
     margin: 30px auto;
     color: red;
     text-align: center;
+
+    background-size: cover;
 }
 
 
@@ -19,7 +22,7 @@ body{
 button{
     width: 150px;
     height: 50px;
-    background: transparent;
+  
     border-radius: 15px;
     border: 2px solid black;
     margin-right: 10px;
@@ -45,5 +48,4 @@ button:hover{
     margin-left: 255px;
 }
 
-    
     
