@@ -5,9 +5,11 @@ function start(){
         let seconds = Math.floor((time / 100) % 60);
         let miliseconds = time % 100 ;
          stoperElement.innerHTML=`${minutes}:${seconds}:${miliseconds}`;
-              
+         
+        
 }, 10);
     
+
 };
 
 function pause(){
