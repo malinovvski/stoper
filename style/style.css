@@ -1,28 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
 body{
-    height: 100%;    
+    height: 100%;  
+    background: #1F2937;  
 }
 .container {
-	width: 800px;
-    
-    margin: 30px auto;
+	width: 100%;
+    max-width: 650px;
+    height: 20%;
+    background-color: #091930;
+    margin: 4rem auto;
     color: red;
     text-align: center;
-
     background-size: cover;
+    border-radius: 25px;
 }
 
 
 .buttons {
 	margin: -25px;
 	position: relative;
-	left: 140px;
-	top: 100px;
+	left: center;
+	top: 55px;
 }
 
 button{
     width: 150px;
     height: 50px;
-  
     border-radius: 15px;
     border: 2px solid black;
     margin-right: 10px;
@@ -38,14 +44,17 @@ button:hover{
 
 #minuty,
 #sekundy {
-    font-size: 2em;
+    font-size: 5em;
+    font-weight: 300;
 }
     
 #meter
 {
-    color: pink;
-    font-size: 25px;
-    margin-left: 255px;
+    color: white;
+    font-size: 3em;
+    margin-left: center;
+    font-weight: 300;
+   
 }
 
     
