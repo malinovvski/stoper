@@ -1,3 +1,5 @@
+let startButton = document.querySelector("#start");
+
 
 function start() {
     interval = setInterval(() => {
@@ -6,6 +8,7 @@ function start() {
         seconds = Math.floor((time / 100) % 60);
         miliseconds = time % 100;
         stoperElement.innerHTML = `${minutes}:${seconds}:${miliseconds}`;
+		startButton.setAttribute("disabled", "");
 
     }, 10);
 
@@ -14,6 +17,7 @@ function start() {
 
 function pause() {
     clearInterval(interval);
+	startButton.removeAttribute("disabled");
 };
 
 
@@ -24,6 +28,7 @@ function stop() {
     miliseconds = 0;
     clearInterval(interval);
     stoperElement.innerHTML = `${minutes}:${seconds}:${miliseconds}`;
+	startButton.removeAttribute("disabled");
 };
 
 let time = 0;
